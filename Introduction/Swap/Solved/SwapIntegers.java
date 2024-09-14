@@ -1,4 +1,4 @@
-package Introduction;
+package Introduction.Swap.Solved;
 public class SwapIntegers {
     public static void main(String[] args) {
         int a = 5;
