@@ -1,5 +1,7 @@
 package Introduction.EvenorOdd.Unsolved;
 
 public class EvenorOdd {
-     //Write your code here
+    public static void main(String[] args) {
+        //write your code here
+}
 }
