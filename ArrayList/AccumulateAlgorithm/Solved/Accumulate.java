@@ -24,3 +24,4 @@ public class Accumulate {
         System.out.println("The accumulated sum of the elements in the ArrayList is: " + sum);
     }
 }
+
