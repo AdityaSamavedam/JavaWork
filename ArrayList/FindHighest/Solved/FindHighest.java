@@ -3,7 +3,7 @@ package ArrayList.FindHighest.Solved;
 import java.util.ArrayList;
 
 public class FindHighest {
-     public static void main(String[] args) {
+    public static void main(String[] args) {
         // Create an ArrayList and add some scores
         ArrayList<Integer> scores = new ArrayList<>();
         scores.add(85);

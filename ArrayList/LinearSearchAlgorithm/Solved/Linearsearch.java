@@ -3,7 +3,7 @@ package ArrayList.LinearSearchAlgorithm.Solved;
 import java.util.ArrayList;
 
 public class Linearsearch {
-        public static void main(String[] args) {
+     public static void main(String[] args) {
         // Create an ArrayList and add some integers
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(10);
@@ -36,5 +36,3 @@ public class Linearsearch {
         return -1; // Return -1 if not found
     }
 }
-
-
