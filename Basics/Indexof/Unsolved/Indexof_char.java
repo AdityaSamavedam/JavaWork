@@ -1,5 +1,9 @@
 package Basics.Indexof.Unsolved;
 
 public class Indexof_char {
-    //find if a string contains a specific character in a string
+    //Finding the Index of a Character
+
+    //Finding the Index of a Substring
+
+    //Finding the Index Starting from a Specific Index
 }
