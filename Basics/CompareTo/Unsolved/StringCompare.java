@@ -14,6 +14,12 @@ The comparison is case-sensitive, meaning that uppercase letters are considered 
 */
 
 public class StringCompare {
-    
+    public static void main(String[] args) {
+        String str1 = "apple";
+        String str2 = "Banana";
+        String str3 = "carrot";
+        System.out.println(str1.compareTo(str2));
+        System.out.println(str1.compareTo(str3));
+    }
 }
 

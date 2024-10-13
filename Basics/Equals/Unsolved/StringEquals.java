@@ -27,6 +27,10 @@ public class StringEquals {
         String str3 = "Hello";
         String str4 = new String("hello"); // Using new keyword
         String str5 = null;
+        System.out.println(str1.equals(str2)); //true
+        System.out.println(str1.equals(str3)); //false
+        System.out.println(str1.equals(str4)); //true
+        System.out.println(str1.equals(str5)); //false
         //Compare str1 with all strings
 }
 }
