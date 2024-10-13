@@ -15,6 +15,8 @@ public class StringCompare {
 
         // Comparing str1 and str4
         System.out.println("Comparing 'apple' and 'apple': " + str1.compareTo(str4)); // Output: 0
+        Integer parsedInt = Integer.parseInt("100");
+        System.out.println(parsedInt);
     }
 }
 
