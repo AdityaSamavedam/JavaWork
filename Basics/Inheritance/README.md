@@ -12,6 +12,3 @@
 
 ## Dynamic Method Dispatch:
 * Implement a class hierarchy with a superclass Bird and subclasses Sparrow and Eagle. Override a method makeSound() in each subclass. Write a main method that creates an array of Bird references and demonstrates dynamic method dispatch by calling makeSound().
-
-## Casting
-* Create a superclass Book and subclasses Ebook and PrintedBook. Write a main method that creates instances of each and demonstrates casting and the use of instanceof to check types before calling specific methods.
