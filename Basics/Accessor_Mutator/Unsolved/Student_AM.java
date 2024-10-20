@@ -14,7 +14,22 @@ public class Student_AM {
         return name;
     }
 
+    public void setGPA(double updatedGPA) {
+        gpa = updatedGPA;
+    }
+
+    public double getGPA() {
+        return gpa;
+    }    
+
+    public static void main(String[] args) {
+        Student_AM sam = new Student_AM("Sam", 4.0);
+        System.out.println(sam.getName() + " is the name of the student.");
+        sam.setGPA(3.8);
+        System.out.println(sam.getGPA() + " is the updated GPA of Sam.");
+    }
 }
+
 
 /*
  * TODO : Instantiate a new Student object called sam

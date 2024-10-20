@@ -21,7 +21,7 @@
 ## 🏗️ Static and Instance Variables:
 * Create a class Counter that has a static variable to count the number of instances created. Implement a constructor that increments this static variable each time an instance is created. Write a main method to create multiple instances and print the count.
 
-## 🏗️ Mutable vs. Immutable Objects:
+## 🏗️ Mutable vs. Immutable Objects (HW):
 * Define a class ImmutablePoint with final attributes x and y. Implement a constructor to initialize these attributes. Demonstrate that once an instance is created, its values cannot be changed.
 
 ## 🏗️ Handling Invalid Inputs:
