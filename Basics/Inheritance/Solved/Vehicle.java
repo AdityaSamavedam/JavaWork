@@ -1,4 +1,4 @@
-package Basics.Inheritance;
+package Basics.Inheritance.Solved;
 
    public class Vehicle {
         protected String brand = "Ford";        // Vehicle attribute
@@ -9,6 +9,7 @@ package Basics.Inheritance;
       
       class Car extends Vehicle {
         private String modelName = "Mustang";    // Car attribute
+        
         public static void main(String[] args) {
       
           // Create a myCar object
