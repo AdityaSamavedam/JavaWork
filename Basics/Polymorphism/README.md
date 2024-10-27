@@ -1,9 +1,10 @@
-## Define a class Employee with a method calculateSalary(). Create subclasses FullTimeEmployee and PartTimeEmployee, each implementing their own salary calculation. Write a main method that demonstrates polymorphism by calling calculateSalary() on an array of Employee references
-
 ## Method Overloading and Overriding Basics
 Write a program demonstrating method overloading in Java. Create a Calculator class with methods for addition that take different parameter types (e.g., int, double).
 
 Write a program that shows method overriding. Create a base class Animal with a makeSound method, and subclasses like Dog and Cat that override makeSound.
+
+## Polymorphism with arrays
+Define a class Employee with a method calculateSalary(). Create subclasses FullTimeEmployee and PartTimeEmployee, each implementing their own salary calculation. Write a main method that demonstrates polymorphism by calling calculateSalary() on an array of Employee references
 
 ## Polymorphism in Collections
 Write a program that creates a list of Shape objects (e.g., Circle, Rectangle, and Triangle). Use a loop to iterate through the list and call the draw method for each shape.
