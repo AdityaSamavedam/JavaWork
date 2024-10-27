@@ -7,9 +7,9 @@ public class House {
     private String type;
 
     public House(Builder builder) {
-        this.color = color;
-        this.size = size;
-        this.type = type;
+        this.color = builder.color;
+        this.size = builder.size;
+        this.type = builder.type;
     }
 
     @Override
