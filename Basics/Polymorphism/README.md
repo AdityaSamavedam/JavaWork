@@ -22,8 +22,6 @@ Design a payment processing system with a base class PaymentMethod and subclasse
 ## Runtime Polymorphism with Constructors
 Create a class Employee with subclasses Manager and Developer. Demonstrate polymorphism by creating Employee references for Manager and Developer objects, initializing them with constructor parameters that are specific to each subclass.
 
-## Factory Pattern using Polymorphism
-Implement a factory class ShapeFactory that returns an instance of a Shape (e.g., Circle, Square) based on a parameter. Use polymorphism to call draw on the object returned from the factory.
 
 ## Polymorphic Behavior in Exception Handling
 Write a program with a superclass BaseException and subclasses FileNotFoundException and IOException. Demonstrate polymorphism by handling different types of exceptions in a single catch block.
