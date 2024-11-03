@@ -39,7 +39,7 @@ public static void countDown(int n) {
     }
 }
 
-# Examine the following function and explain why it leads to infinite recursion:
+## Examine the following function and explain why it leads to infinite recursion:
 public static int countdown(int n) {
     if (n > 0) {
         System.out.println(n);
