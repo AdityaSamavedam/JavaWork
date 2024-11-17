@@ -1,5 +1,7 @@
 package Basics.Polymorphism;
 
+import java.util.ArrayList;
+
 class Main {
     public static void main(String[] args) {
         Animal myAnimal = new Animal(); // Create a Animal object
@@ -18,6 +20,12 @@ class Main {
         // Animal you give it. As long as the object
         // you pass in as the argument is a subclass of
         // Animal, it will work
-
+        ArrayList<Shapes> myShapes = new ArrayList<>();
+        myShapes.add(new Circle());
+        myShapes.add(new Rectangle());
+        myShapes.add(new Triangle());
+        for (Shapes eachShape : myShapes) {
+            eachShape.draw();
+        }
     }
 }
