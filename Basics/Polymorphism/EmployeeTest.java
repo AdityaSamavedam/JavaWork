@@ -8,7 +8,7 @@ abstract class Employee {
         this.salary = salary;
     }
 
-    abstract void displayDetails();
+    public abstract void displayDetails();
 }
 
 class Manager extends Employee {
@@ -20,7 +20,7 @@ class Manager extends Employee {
     }
 
     @Override
-    void displayDetails() {
+    public void displayDetails() {
         System.out.println("Name: " + name + ", Salary: " + salary + ", Management Size: " + managementSize);
     }
 }
@@ -34,7 +34,7 @@ class Developer extends Employee {
     }
 
     @Override
-    void displayDetails() {
+    public void displayDetails() {
         System.out.println("Name: " + name + ", Salary: " + salary + ", Language: " + language);
     }
 }

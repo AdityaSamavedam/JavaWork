@@ -19,9 +19,9 @@ class Main {
         // for (Shapes eachShape : myShapes) {
         //     eachShape.draw();
         // }
-        Employee manager = new Manager("Jason", 10000, 5);
-        Employee developer = new Developer("Jack", 13000, "Java");
-        manager.displayDetails();
-        developer.displayDetails();
+        // Employee manager = new Manager("Jason", 10000, 5);
+        // Employee developer = new Developer("Jack", 13000, "Java");
+        // manager.displayDetails();
+        // developer.displayDetails();
     }
 }
