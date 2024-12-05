@@ -19,5 +19,15 @@ class Main {
         // you pass in as the argument is a subclass of
         // Animal, it will work
 
+        //Calculator.java
+        Calculator calculator = new Calculator();
+
+        // Testing add methods with various parameter types
+        System.out.println(calculator.add(5, 10));             // Adding two integers
+        System.out.println(calculator.add(5, 10, 15));         // Adding three integers
+        System.out.println(calculator.add(5.5, 10.5));         // Adding two doubles
+        System.out.println(calculator.add(5, 10.5));           // Adding an integer and a double
+        System.out.println(calculator.add(5.5, 10));           // Adding a double and an integer
+
     }
 }
