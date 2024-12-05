@@ -10,7 +10,7 @@ public class Fibonacci {
     }
 
     public static void main(String[] args) {
-        int result = fibonacci(6); // Finds the 6th Fibonacci number
+        int result = fibonacci(4); // Finds the 6th Fibonacci number
         System.out.println("Fibonacci of 6 is: " + result);
     }
 }

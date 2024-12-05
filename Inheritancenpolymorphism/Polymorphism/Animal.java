@@ -1,4 +1,4 @@
-package Basics.Polymorphism;
+package Inheritancenpolymorphism.Polymorphism;
 
 public class Animal {
      public void animalSound() {

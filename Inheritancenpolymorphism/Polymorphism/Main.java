@@ -1,4 +1,4 @@
-package Basics.Polymorphism;
+package Inheritancenpolymorphism.Polymorphism;
 
 class Main {
     public static void main(String[] args) {

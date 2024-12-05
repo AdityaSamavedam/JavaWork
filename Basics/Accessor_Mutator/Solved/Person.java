@@ -1,4 +1,4 @@
-package Basics.Accessor_Mutator;
+package Basics.Accessor_Mutator.Solved;
 
 //Accessor & Mutator Methods
 
