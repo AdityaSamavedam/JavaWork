@@ -9,6 +9,8 @@ public static int mystery(int n) {
     }
     return n + mystery(n - 1);
 }
+
+Ans: 10
 ## What will factorial(5) return in the following code?
 
 public static int factorial(int n) {
@@ -18,17 +20,26 @@ public static int factorial(int n) {
     return n * factorial(n - 1);
 }
 
+Ans: 120
+
 ## What’s wrong with the following recursive function?
 
 public static int sumToN(int n) {
+    ## base case
+    if (n <= 0) {
+        return 0;
+    }
+
     return n + sumToN(n - 1);
 }
+
+No base case mentioned, results in infinite loop.
 
 ## Write a recursive function power that computes base raised to the power of exp (i.e., base pow exp)
 
 ## Write a recursive function that returns the sum of all elements in an array.
 
-## Trace the following recursive function call and list the values that are printed:
+## Trace the following recursive function call and list the values that are printed (Let n = 5):
 
 public static void countDown(int n) {
     if (n <= 0) {
@@ -39,6 +50,13 @@ public static void countDown(int n) {
     }
 }
 
+5
+4
+3
+2
+1
+Blast off!
+
 ## Examine the following function and explain why it leads to infinite recursion:
 public static int countdown(int n) {
     if (n > 0) {
@@ -48,3 +66,5 @@ public static int countdown(int n) {
         return 0;
     }
 }
+
+The variable is not being decremented, it should be return(countdown(n-1))
