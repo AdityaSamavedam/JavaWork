@@ -48,3 +48,47 @@ public static int countdown(int n) {
         return 0;
     }
 }
+
+## Given the array arr = {10, 2, 5, 8}, trace the steps of merge sort to show how the array is divided and merged.
+
+## Write a Recursive Call Trace for Merge Sort
+
+## Fill in the Missing Part of the Code
+
+public static void mergeSort(int[] arr, int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+
+        // Missing recursive calls
+        _______________________
+        _______________________
+
+        merge(arr, left, mid, right);
+    }
+}
+
+## Consider the following merge sort code. There is an error in the merge function. Identify the error and fix it.
+
+public static void merge(int[] arr, int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+
+    int[] leftArray = new int[n1];
+    int[] rightArray = new int[n2];
+
+    for (int i = 0; i < n1; i++) leftArray[i] = arr[left + i];
+    for (int j = 0; j < n2; j++) rightArray[j] = arr[mid + j];  // Potential Error
+
+    int i = 0, j = 0, k = left;
+
+    while (i < n1 && j < n2) {
+        if (leftArray[i] <= rightArray[j]) {
+            arr[k++] = leftArray[i++];
+        } else {
+            arr[k++] = rightArray[j++];
+        }
+    }
+
+    while (i < n1) arr[k++] = leftArray[i++];
+    while (j < n2) arr[k++] = rightArray[j++];
+}
