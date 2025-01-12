@@ -48,3 +48,104 @@ public static int countdown(int n) {
         return 0;
     }
 }
+
+## Given the array arr = {10, 2, 5, 8}, trace the steps of merge sort to show how the array is divided and merged.
+
+## Fill in the Missing Part of the Code
+
+public static void mergeSort(int[] arr, int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+
+        // Missing recursive calls
+        _______________________
+        _______________________
+
+        merge(arr, left, mid, right);
+    }
+}
+
+## Consider the following merge sort code. There is an error in the merge function. Identify the error and fix it.
+
+public static void merge(int[] arr, int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+
+    int[] leftArray = new int[n1];
+    int[] rightArray = new int[n2];
+
+    for (int i = 0; i < n1; i++) leftArray[i] = arr[left + i];
+    for (int j = 0; j < n2; j++) rightArray[j] = arr[mid + j];  
+
+    int i = 0, j = 0, k = left;
+
+    while (i < n1 && j < n2) {
+        if (leftArray[i] <= rightArray[j]) {
+            arr[k++] = leftArray[i++];
+        } else {
+            arr[k++] = rightArray[j++];
+        }
+    }
+
+    while (i < n1) arr[k++] = leftArray[i++];
+    while (j < n2) arr[k++] = rightArray[j++];
+}
+
+## Consider the following method:
+
+   int left = 0;
+        int right = arr.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2; // Avoids overflow for large left and right values
+
+            // Check if the target is at mid
+            if (arr[mid] == target) {
+                return mid;
+            }
+            // If the target is smaller, ignore the right half
+            else if (arr[mid] > target) {
+                right = mid - 1;
+            }
+            // If the target is larger, ignore the left half
+            else {
+                left = mid + 1;
+            }
+        }
+
+## Algorithm implemented by the method can best be described as :
+ # a. Insertion Sort
+ # b. Selection Sort
+ # c. Binary Search
+ # d. Merge Sort
+ # e. Sequential Sort
+
+ ## Programmer intends to apply standard binary search algorithm on following array of integers.The standard binary search returns the index of the search target if it is found and -1 if target is not found.What is returned by algorithm when search for 50 is executed?
+
+ int [] array ={9,100,11,45,76,100,50,1,0,55,99};
+
+## Consider the following code segment that impelements the insertion sort algortihm:
+
+ public static void insertionSort(int[] arr) {
+        int n = arr.length;
+
+        for (int i = 1; i < n; i++) {
+            int key = arr[i];
+            int j = i - 1;
+
+            while (j >= 0 && /* condition */) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+
+            arr[j + 1] = key;
+        }
+    }
+
+### Which of the following can be used to replace */ condition */ so that insertion sort will work as intended-
+
+a. arr [i] > key
+b. arr[j]> key
+c.arr[i+1] >key
+d.arr [j+1] > key
+e.arr [i-1] > key
