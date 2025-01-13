@@ -43,3 +43,99 @@ Blast off!
 
 Answer: This function has an infinite recursion problem because it calls countdown(n) without reducing 
 n. To avoid this, it should call countdown(n - 1) to decrease n each time.
+
+## 
+### Step 1:Step-by-step trace of Merge Sort on the array arr = {10, 2, 5, 8}:
+Original Array: {10, 2, 5, 8}
+
+### Step 2: Divide
+Divide the array into two halves recursively until each subarray contains only one element.
+
+### FirstSplit
+Left:  {10, 2}
+Right: {5, 8}
+
+
+### Split the Left Subarray ({10, 2}):
+Left:  {10}
+Right: {2}
+
+### Split Right Half ({5, 8}):
+
+Left:  {5}
+Right: {8}
+
+
+### At this stage, the array has been divided into individual elements:
+
+{10}, {2}, {5}, {8}
+
+### Step 3: Merge Phase
+Now we begin merging the subarrays in sorted order.
+
+#### Merge {10} and {2}: 
+Compare 10 and 2, and merge them in sorted order:
+Merged: {2, 10}
+
+#### Merge {5} and {8}
+Merged: {5, 8}
+
+#### Merge {2, 10} and {5, 8}: Compare elements and merge:
+
+Compare 2 and 5: Take 2.
+Compare 10 and 5: Take 5.
+Compare 10 and 8: Take 8.
+Take remaining 10.
+
+Merged: {2, 5, 8, 10}
+
+## Here’s the missing part of the code with the recursive calls for the left and right subarrays:
+
+
+public static void mergeSort(int[] arr, int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+
+        // Missing recursive calls
+        mergeSort(arr, left, mid);       // Sort the left half
+        mergeSort(arr, mid + 1, right); // Sort the right half
+
+        merge(arr, left, mid, right); // Merge the sorted halves
+    }
+}
+
+#### Explanation
+Recursive Calls:
+
+mergeSort(arr, left, mid): Recursively sorts the left half of the array.
+mergeSort(arr, mid + 1, right): Recursively sorts the right half of the array.
+Merge:
+
+merge(arr, left, mid, right): Combines the two sorted halves back into a single sorted subarray.
+
+## Consider the following merge sort code. There is an error in the merge function. Identify the error and fix it.
+
+Issue is here in this merge function -
+for (int j = 0; j < n2; j++) {
+rightArray[j] = arr[mid + j];
+}
+
+The calculation for the index of rightArray is incorrect. arr[mid + j] should instead start from arr[mid + 1] because mid belongs to the left subarray. Therefore, the correct line should be:
+
+for (int j = 0; j < n2; j++) 
+{
+    rightArray[j] = arr[mid + 1 + j];
+
+}
+
+This fix ensures that the rightArray correctly starts from the element immediately after mid.
+
+## Algorithm implemented by the method can best be described as :
+Binary Search
+
+## If the programmer applies the binary search algorithm directly on the unsorted array, the behavior is undefined, and it may:
+
+Return an incorrect index for 50. or 
+Return -1 if the algorithm fails to find it.
+
+## arr[j]> key
