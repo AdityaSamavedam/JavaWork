@@ -114,11 +114,11 @@ public static void merge(int[] arr, int left, int mid, int right) {
         }
 
 ## Algorithm implemented by the method can best be described as :
- # a. Insertion Sort
- # b. Selection Sort
- # c. Binary Search
- # d. Merge Sort
- # e. Sequential Sort
+ ### a. Insertion Sort
+ ### b. Selection Sort
+ ### c. Binary Search
+ ### d. Merge Sort
+ ### e. Sequential Sort
 
  ## Programmer intends to apply standard binary search algorithm on following array of integers.The standard binary search returns the index of the search target if it is found and -1 if target is not found.What is returned by algorithm when search for 50 is executed?
 
@@ -144,8 +144,8 @@ public static void merge(int[] arr, int left, int mid, int right) {
 
 ### Which of the following can be used to replace */ condition */ so that insertion sort will work as intended-
 
-a. arr [i] > key
-b. arr[j]> key
-c.arr[i+1] >key
-d.arr [j+1] > key
-e.arr [i-1] > key
+### a. arr [i] > key
+### b. arr[j]> key
+### c.arr[i+1] >key
+### d.arr [j+1] > key
+### e.arr [i-1] > key
